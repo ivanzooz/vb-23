@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <header>To-Do</header>
+        <main class="input-task">
+            <input class="input" placeholder="input task" id="input-new-task" maxlength="256">
+            <button class="button" id="button-add-new-task">Add task</button>
+            <div class="control-elements">
+                <div class="checkbox-with-label">
+                    <input type="checkbox" id="button-select-all-tasks" class="checkbox" disabled>
+                    <label for="button-select-all-tasks">Select all</label>
+                </div>
+                <button class="button" id="button-delete-complited-tasks" disabled>Delete complited</button>
+            </div>
+            <div class="tabs-and-list-tasks">
+                <nav class="tabs">
+                    <button class="button tab" id="button-all-tasks" disabled>all (0)</button>
+                    <button class="button tab" id="button-active-tasks" disabled>Active (0)</button>
+                    <button class="button tab" id="button-complited-tasks" disabled>Complited (0)</button>
+                </nav>
+                <ul class="list-tasks"></ul>
+            </div>
+            <div class="pagination-bar"></div>
+        </main>
+    </section>
+</body>
+</html>
